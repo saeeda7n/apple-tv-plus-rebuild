@@ -3,7 +3,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Link from "next/link";
-import { RiPlayCircleFill, RiPlayFill } from "@remixicon/react";
+import { RiPlayCircleFill } from "@remixicon/react";
 
 function SmallMovieCard({ movie }: SmallMovieCardProps) {
   return (
@@ -11,10 +11,10 @@ function SmallMovieCard({ movie }: SmallMovieCardProps) {
       key={movie.image}
       className="group relative aspect-video h-52 shrink-0 overflow-hidden rounded-lg"
     >
-      <div className="absolute inset-0 z-10 flex items-center justify-center bg-black bg-opacity-0 transition duration-300 group-hover:bg-opacity-40">
+      <div className="absolute inset-0 z-10 flex items-center justify-center bg-black/40 opacity-0 transition duration-300 group-hover:opacity-100">
         <Link
           href={"/"}
-          className="flex h-11 translate-y-8 items-center gap-1 rounded-full bg-white px-5 text-sm font-semibold text-gray-800 opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100"
+          className="flex h-11 translate-y-8 items-center gap-1 rounded-full bg-white px-5 text-sm font-semibold text-gray-800 transition duration-300 hover:opacity-80 group-hover:translate-y-0"
         >
           Stream now
           <RiPlayCircleFill className="size-5" />
@@ -35,6 +35,7 @@ export function AutoCarousel({ items, duration }: AutoCarouselProps) {
   const animation = useRef<any>();
   const { contextSafe } = useGSAP(
     () => {
+      gsap.set(".slider", { x: gsap.utils.random(-4, -30) + "%" });
       animation.current = gsap.to(".slider", {
         x: "-100%",
         ease: "none",

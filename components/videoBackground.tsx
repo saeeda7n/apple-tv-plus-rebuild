@@ -9,7 +9,10 @@ export function VideoBackground() {
           loop
           className="min-h-screen w-full bg-gray-200 object-cover object-center"
         >
-          <source src="/assets/video/hero.mp4" type="video/mp4" />
+          <source
+            src="https://musicc.storage.iran.liara.space/videos/hero.mp4"
+            type="video/mp4"
+          />
           Your browser does not support the video tag.
         </video>
       </div>

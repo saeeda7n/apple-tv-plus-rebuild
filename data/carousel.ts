@@ -68,18 +68,30 @@ export const RANDOM_MOVIE_SET: Movie[] = [
   { image: "/assets/images/covers/378x212-7.jpg" },
   { image: "/assets/images/covers/378x212-8.jpg" },
   { image: "/assets/images/covers/378x212-9.jpg" },
-];
-
-export const RANDOM_MOVIE_SET_2: Movie[] = [
-  { image: "/assets/images/covers/378x212-10.jpg" },
-  { image: "/assets/images/covers/378x212-11.jpg" },
-  { image: "/assets/images/covers/378x212-12.jpg" },
-  { image: "/assets/images/covers/378x212-13.jpg" },
-  { image: "/assets/images/covers/378x212-14.jpg" },
   { image: "/assets/images/covers/378x212-15.jpg" },
   { image: "/assets/images/covers/378x212-16.jpg" },
   { image: "/assets/images/covers/378x212-17.jpg" },
   { image: "/assets/images/covers/378x212-18.jpg" },
   { image: "/assets/images/covers/378x212-19.jpg" },
   { image: "/assets/images/covers/378x212-20.jpg" },
-];
+].sort(() => (Math.random() > 0.5 ? 1 : -1));
+
+export const RANDOM_MOVIE_SET_2: Movie[] = [
+  { image: "/assets/images/covers/378x212-10.jpg" },
+  { image: "/assets/images/covers/378x212-11.jpg" },
+  { image: "/assets/images/covers/378x212-1.jpg" },
+  { image: "/assets/images/covers/378x212-12.jpg" },
+  { image: "/assets/images/covers/378x212-14.jpg" },
+  { image: "/assets/images/covers/378x212-2.jpg" },
+  { image: "/assets/images/covers/378x212-13.jpg" },
+  { image: "/assets/images/covers/378x212-3.jpg" },
+  { image: "/assets/images/covers/378x212-4.jpg" },
+  { image: "/assets/images/covers/378x212-5.jpg" },
+  { image: "/assets/images/covers/378x212-6.jpg" },
+  { image: "/assets/images/covers/378x212-15.jpg" },
+  { image: "/assets/images/covers/378x212-16.jpg" },
+  { image: "/assets/images/covers/378x212-17.jpg" },
+  { image: "/assets/images/covers/378x212-18.jpg" },
+  { image: "/assets/images/covers/378x212-19.jpg" },
+  { image: "/assets/images/covers/378x212-20.jpg" },
+].sort(() => (Math.random() > 0.5 ? 1 : -1));

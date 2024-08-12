@@ -47,8 +47,8 @@ export default function Home() {
       </div>
       <div className="flex min-h-screen flex-col gap-5 bg-black">
         <MainCarousel items={MAIN_CAROUSEL} />
-        <AutoCarousel duration={75} items={RANDOM_MOVIE_SET} />
-        <AutoCarousel duration={105} items={RANDOM_MOVIE_SET_2} />
+        <AutoCarousel duration={95} items={RANDOM_MOVIE_SET} />
+        <AutoCarousel duration={125} items={RANDOM_MOVIE_SET_2} />
       </div>
     </main>
   );
