@@ -8,6 +8,7 @@ declare type OffersCardProps = {
 };
 
 declare type Movie = {
+  id?: number;
   image: string;
   shortDesc?: string;
   brand?: string;
@@ -19,6 +20,18 @@ declare type Movie = {
 declare type AutoCarouselProps = {
   items: Movie[];
   duration: number;
+  className?: string;
 };
 
 declare type SmallMovieCardProps = { movie: Movie };
+
+declare type CarouselCardProps = {
+  movie: Movie;
+  index: number;
+};
+
+declare type CarouselContextProps = {
+  center: number;
+  length: number;
+  setCenter: (index: number) => void;
+};

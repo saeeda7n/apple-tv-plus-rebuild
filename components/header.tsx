@@ -19,14 +19,14 @@ const menuItems = [
 const Header = async () => {
   return (
     <React.Fragment>
-      <header className="relative z-50 flex h-12 items-center bg-zinc-900 text-white">
+      <header className="relative z-[60] flex h-12 items-center bg-zinc-900 px-5 text-white">
         <div className="mx-auto flex w-full max-w-5xl items-center gap-8 text-neutral-300">
           <h1 className="sr-only">Apple TV+</h1>
           <Link href="/">
             <RiAppleFill className="mb-1 size-4" />
           </Link>
 
-          <ul className="contents w-full text-xs font-light">
+          <ul className="hidden w-full text-xs font-light md:contents">
             {menuItems.map((item) => (
               <li key={item}>{item}</li>
             ))}
@@ -38,7 +38,7 @@ const Header = async () => {
           </div>
         </div>
       </header>
-      <div className="sticky top-0 z-50 flex h-12 items-center border-b border-b-zinc-700 bg-zinc-900 text-gray-100">
+      <div className="sticky top-0 z-[60] flex h-12 items-center border-b border-b-zinc-700 bg-zinc-900 px-5 text-gray-100">
         <div className="mx-auto flex w-full max-w-5xl items-center justify-between">
           <a className="text-xl font-medium">Apple TV+</a>
 

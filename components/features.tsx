@@ -34,7 +34,7 @@ function Feature({ children }: PropsWithChildren) {
 
 export function Features() {
   return (
-    <section className="mt-8 flex pb-5 text-6xl font-bold text-white">
+    <section className="mt-8 flex pb-5 text-[5vw] font-bold text-white sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
       <ul className="space-y-12">
         {FEATURES.map((feature, key) => (
           <Feature key={key}>{feature}</Feature>

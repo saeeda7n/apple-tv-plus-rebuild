@@ -51,7 +51,7 @@ function OfferCard({ title, subtitle, body, actionButton }: OffersCardProps) {
 
 export function Offers() {
   return (
-    <section className="mt-32 grid grid-cols-3 gap-16 text-gray-50">
+    <section className="mt-32 grid grid-cols-1 gap-16 text-gray-50 md:grid-cols-3">
       {OFFERS.map((offer) => (
         <OfferCard {...offer} key={offer.title} />
       ))}

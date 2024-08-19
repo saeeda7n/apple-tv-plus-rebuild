@@ -9,7 +9,7 @@ const roboto = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Apple TV+ | Rebuild",
+  title: "Apple TV+ | Rebuild Animations",
   description: "A Rebuild version of Apple TV+",
 };
 
@@ -20,7 +20,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <body className={roboto.className}>
           <Header />
           {children}
-          <footer></footer>
         </body>
       </ProvidersLayout>
     </html>

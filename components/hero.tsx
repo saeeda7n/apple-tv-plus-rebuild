@@ -32,14 +32,14 @@ export function Hero() {
       ref={scope}
       className="flex min-h-[calc(100vh-theme(spacing.28))] flex-col justify-end gap-8 pb-5 pt-16 text-white"
     >
-      <h1 className="text-8xl font-bold">
+      <h1 className="text-[8vw] font-bold sm:text-6xl md:text-7xl lg:text-8xl">
         All Apple Originals.
         <br />
         Only on Apple TV+.
       </h1>
       <Link
         className="flex h-14 items-center justify-center self-start rounded-full bg-white px-8 font-semibold text-zinc-900"
-        href={"/"}
+        href="/"
       >
         Stream now
       </Link>
